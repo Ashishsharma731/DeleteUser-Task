@@ -15,7 +15,7 @@ You are also free to make other contracts to help solve the challenges.
 1. Overmint: Find a way to mint 5 NFTs
 2. DeleteUser: The deployer has deposited 1 ether into the contract. Find a way to steal this money from the contract
 
-You must use only the `attackerWallet` to make transactions and both of them require you to make **NOT MORE** than 1 transaction for the attack.
+You must use only the `attackerWallet` to make transactions and both challenges require you to make **NOT MORE** than 1 transaction for the attack.
 
 # How to submit
 Clone this repo or fork it to make neccessary changes and then put it up on your GitHub profile. Share the link of your repo via email.
