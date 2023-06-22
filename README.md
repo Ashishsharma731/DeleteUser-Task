@@ -7,7 +7,7 @@ Both of these contracts are a CTF (like wargames like Damn Vulnerable Defi and E
 
 
 Both of them have different inital and winning conditions. And you are required to solve **ONLY 1 OF THEM**. You are free to choose which.
-Please refer to the test files to get a better understanding of how to clear the CTFs. You are **NOT** supposed to change the parts of the test files which deploy and check if you've successfully reached the target. You are free to make changes inside the `it` block that says `"conduct your attack here"`.
+Please refer to the test files to get a better understanding of how to clear the CTFs. You are **NOT** supposed to change the parts of the test files that deploys the contracts and checks if you've successfully reached the target. You are free to make changes inside the `it` block that says `"conduct your attack here"`.
 
 
 You are also free to make other contracts to help solve the challenges.
